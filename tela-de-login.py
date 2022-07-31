@@ -2,7 +2,7 @@ from PySimpleGUI import PySimpleGUI as sg
 
 
 sg.theme('Reddit')
-layout = [
+layout = [  
     [sg.Text('User'),sg.Input(key='usuario')],
     [sg.Text('Pass'),sg.Input(key='senha',password_char='*')],
     [sg.Checkbox('Remember this?')],
@@ -20,4 +20,6 @@ while True:
     if eventos == 'Login':
         if valores['usuario'] == 'Marcelldac' and valores['senha'] == 'marcelldac':
             print('Bem-vindo ao login')
+        else:
+            print('Você não é bem vindo')
     
